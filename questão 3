@@ -17,12 +17,7 @@ programa {
 
     idade = ano + meses + dias
 
-
-
-    
-    escreva("Você tem ", idade, " Dias de vida.")
-
-
-    
+		escreva("\nVocê tem:\n")
+		escreva(idade, " dias de vida.\n")
   }
 }
