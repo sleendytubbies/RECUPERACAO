@@ -1,0 +1,30 @@
+programa {
+  funcao inicio() {
+    inteiro a, b, c, x, valor
+
+    x = 0
+
+    escreva("Digite o valor de 1: ")
+    leia(a)
+
+    se(x < a){
+      x = a
+    }
+
+    escreva("Digite o valor de 2: ")
+    leia(b)
+
+    se(x < b){
+      x = b
+    }
+
+    escreva("Digite o valor de 3: ")
+    leia(c)
+
+    se(x < c){
+      x = c
+    }
+
+    escreva("O maior valor é : ", x)
+  }
+}
