@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    inteiro a, b , c , soma , media
+    cadeia nome
+
+    escreva("Digite sua PRIMEIRA nota: ")
+    leia(a)
+
+    escreva("\nDigite sua SEGUNDA nota: ")
+    leia(b)
+
+    escreva("\nDigite sua TERCEIRA nota: ")
+    leia(c)
+
+    soma = a + b + c
+    media = soma / 3
+
+    se(media >= 6){
+      escreva("\nParabéns ", nome , "você foi aprovado, sua media de nota é ", media, "\n")
+    }
+    senao escreva("Você não foi aprovado , sua media de nota é ", media)
+  }
+}
