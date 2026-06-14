@@ -1,0 +1,48 @@
+programa {
+	funcao inicio() {
+		inteiro cod
+		real nota1, nota2, nota3, notaM, notaR1, notaR2, media
+
+		escreva("Digite o código do aluno: ")
+		leia(cod)
+
+		escreva("Digite a primeira nota: ")
+		leia(nota1)
+
+		escreva("Digite a segunda nota: ")
+		leia(nota2)
+
+		escreva("Digite a terceira nota: ")
+		leia(nota3)
+
+		se (nota1 >= nota2 e nota1 >= nota3){
+			notaM = nota1
+			notaR1 = nota2
+			notaR2 = nota3
+		}
+		senao se (nota2 >= nota1 e nota2 >= nota3){
+			notaM = nota2
+			notaR1 = nota1
+			notaR2 = nota3
+		}
+		senao{
+			notaM = nota3
+			notaR1 = nota1
+			notaR2 = nota2
+		}
+
+		media = ((notaM * 4) + (notaR1 * 3) + (notaR2 * 3)) / 10
+
+		escreva("\nResultado")
+		escreva("\nCodigo do Aluno: ", cod)
+		escreva("\nNotas: ", nota1, ", ", nota2, " e ", nota3)
+		escreva("\nMedia: ", media)
+
+		se (media >= 5.0){
+			escreva("\nSituação: APROVADO\n")
+		}
+		senao{
+			escreva("\nSituação: REPROVADO\n")
+		}
+	}
+}
