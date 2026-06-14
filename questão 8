@@ -5,14 +5,19 @@ programa {
 
 		escreva("Digite o valor de a: ")
 		leia(a)
+
 		escreva("Digite o valor de b: ")
 		leia(b)
+
 		escreva("Digite o valor de c: ")
 		leia(c)
+
 		escreva("Digite o valor de d: ")
 		leia(d)
+
 		escreva("Digite o valor de e: ")
 		leia(g)
+    
 		escreva("Digite o valor de f: ")
 		leia(f)
 
@@ -20,7 +25,8 @@ programa {
 
 		se (denominador == 0){
 			escreva("\nValor invalidos\n")
-		}senao{
+		}
+    senao{
 			x = ((c * g) - (b * f)) / denominador
 			y = ((a * f) - (c * d)) / denominador
 
