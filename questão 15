@@ -1,0 +1,26 @@
+	funcao inicio() {
+
+		inteiro numero
+
+		escreva("Digite um numero: ")
+		leia(numero)
+
+		se (numero % 2 == 0){
+			escreva("O numero ", numero, " é PAR ")
+		}
+		senao{
+			escreva("O numero ", numero, " é ÍMPAR ")
+		}
+
+
+		se (numero > 0){
+			escreva("e POSITIVO\n")
+		}
+		senao se (numero < 0){
+			escreva("e NEGATIVO\n")
+		}
+		senao{
+			escreva("e NEUTRO\n")
+		}
+	}
+}
