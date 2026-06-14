@@ -1,0 +1,19 @@
+programa {
+	funcao inicio() {
+		real x, y, z, media
+
+		escreva("Digite a primeira nota (x2): ")
+		leia(x)
+
+		escreva("Digite a segunda nota (x3): ")
+		leia(y)
+
+		escreva("Digite a terceira nota (x5): ")
+		leia(z)
+
+
+		media = ((x * 2) + (y * 3) + (z * 5)) / 10
+
+		escreva("\nA média final ponderada do aluno é: ", media)
+	}
+}
