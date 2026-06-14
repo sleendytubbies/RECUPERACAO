@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+    inteiro idade, ano, meses , dias
+
+    escreva("Digite quantos anos de vida você tem: ")
+    leia(ano)
+
+    escreva("Digite quantos meses de vida você tem: ")
+    leia(meses)
+
+    escreva("Digite quantos dias de vida você tem: ")
+    leia(dias)
+
+    ano = ano * 365
+
+    meses = meses * 30
+
+    idade = ano + meses + dias
+
+
+
+    
+    escreva("Você tem ", idade, " Dias de vida.")
+
+
+    
+  }
+}
