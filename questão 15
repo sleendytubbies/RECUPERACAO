@@ -1,5 +1,5 @@
+programa {
 	funcao inicio() {
-
 		inteiro numero
 
 		escreva("Digite um numero: ")
@@ -11,7 +11,6 @@
 		senao{
 			escreva("O numero ", numero, " é ÍMPAR ")
 		}
-
 
 		se (numero > 0){
 			escreva("e POSITIVO\n")
