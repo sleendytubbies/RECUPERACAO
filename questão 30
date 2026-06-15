@@ -1,0 +1,36 @@
+programa {
+	funcao inicio() {
+		real x
+
+		escreva("Digite o índice de poluição medido: ") // usei ia para saber como escrever os alertas
+		leia(x)
+
+		limpa()
+		escreva("Relatório de Notificação")
+		escreva("Índice medido: ", x, "\n\n")
+
+		se (x >= 0.5) 
+		{
+			escreva("ALERTA CRÍTICO!\n")
+			escreva("Todos os 3 grupos de indústrias devem paralisar suas atividades imediatamente.")
+		}
+		senao se (x >= 0.4) 
+		{
+			escreva("ALERTA MEDIO!\n")
+			escreva("As indústrias do 1º e do 2º grupo estão intimadas a suspenderem suas atividades.")
+		}
+		senao se (x >= 0.3) 
+		{
+			escreva("ALERTA INICIAL!\n")
+			escreva("As indústrias do 1º grupo estão intimadas a suspenderem suas atividades.")
+		}
+		senao se (x >= 0.05 e x <= 0.25)
+		{
+			escreva("Índice de poluição em níveis aceitáveis. Nenhuma ação é necessária.")
+		}
+		senao
+		{
+			escreva("Índice fora das faixas padrão informadas ou abaixo do aceitável.")
+		}
+	}
+}
