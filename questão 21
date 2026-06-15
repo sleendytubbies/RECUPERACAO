@@ -1,0 +1,43 @@
+programa {
+	funcao inicio() {
+		cadeia cod
+		inteiro quantidade
+		real preco = 0.0  , total
+		logico codv = verdadeiro
+
+		escreva("Digite o código do produto / ABCD, XYPK, KLMP, QRST /: ")
+		leia(cod)
+
+		escreva("Digite a quantidade comprada: ")
+		leia(quantidade)
+
+		escolha (cod){
+			caso "ABCD":
+				preco = 5.30
+				pare
+			caso "XYPK":
+				preco = 6.00
+				pare
+			caso "KLMP":
+				preco = 3.20
+				pare
+			caso "QRST":
+				preco = 2.50
+				pare
+			caso contrario:
+				codv = falso
+				pare
+		}
+
+		se (codv){
+			total = preco * quantidade
+			escreva("\nPEDIDO")
+			escreva("\nProduto: ", cod)
+			escreva("\nQuantidade: ", quantidade)
+			escreva("\nPreço Total: R$ ", total)
+		}
+		senao{
+			escreva("\nCódigo di produto invalido!")
+		}
+	}
+}
