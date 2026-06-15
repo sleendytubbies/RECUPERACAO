@@ -1,0 +1,36 @@
+programa {
+	funcao inicio() {
+		inteiro cod
+		real salarioA, salarioN, difer, per
+
+		escreva("Digite o salário atual do funcionário: R$ ")
+		leia(salarioA)
+		
+		escreva("Digite o código do cargo / 101, 102, 103 /: ")
+		leia(cod)
+
+		escolha (cod){
+			caso 101:
+				per = 0.10
+				pare
+			caso 102:
+				per = 0.20 
+				pare
+			caso 103:
+				per = 0.30 
+				pare
+			caso contrario:
+				per = 0.40 //
+				pare
+		}
+
+		difer = salarioA * per
+		salarioN = salarioA + difer
+
+		escreva("\nReajuste")
+		escreva("\nSalário antigo: R$ ", salarioA)
+		escreva("\nPercentual aplicado: ", per * 100, "%")
+		escreva("\nValor do aumento: R$ ", difer)
+		escreva("\nNovo salário: R$ ", salarioN, "\n")
+	}
+}
