@@ -1,0 +1,39 @@
+programa {
+	funcao inicio() {
+		inteiro cod, quant
+		real preco = 0 , total
+
+		escreva("Digite o código do item pedido: ")
+		leia(cod)
+		
+		escreva("Digite a quantidade: ")
+		leia(quant)
+
+		escolha (cod){
+			caso 100:
+				preco = 1.20 //cachorro quente
+				pare
+			caso 101:
+				preco = 1.30 //bauru simples
+				pare
+			caso 102:
+				preco = 1.50 //bauru 2
+				pare
+			caso 103:
+				preco = 1.20 //hamburguer
+				pare
+			caso 104:
+				preco = 1.30 //cheeseburguer
+				pare
+			caso 105:
+				preco = 1.00 //refrigerante
+				pare
+			caso contrario:
+				escreva("Código inválido! Por favor, tente novamente.\n")
+		}
+
+		total = preco * quant
+
+		escreva("\nValor a ser pago: R$ ", total, "\n")
+	}
+}
