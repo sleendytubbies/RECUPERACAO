@@ -1,0 +1,48 @@
+programa {
+	funcao inicio() {
+		inteiro codigo, quantidade
+		real preco_unitario, preco_total
+		logico codigo_valido = verdadeiro
+
+		escreva("Digite o código do produto: ")
+		leia(codigo)
+		
+		escreva("Digite a quantidade comprada: ")
+		leia(quantidade)
+
+		escolha (codigo)
+		{
+			caso 1001:
+				preco_unitario = 5.32
+				pare
+			caso 1324:
+				preco_unitario = 6.45
+				pare
+			caso 6548:
+				preco_unitario = 2.37
+				pare
+			caso 0987:
+				preco_unitario = 5.32
+				pare
+			caso 987: 
+				preco_unitario = 5.32
+				pare
+			caso 7623:
+				preco_unitario = 6.45
+				pare
+			caso contrario:
+				escreva("Código de produto inválido!\n")
+				codigo_valido = falso
+				pare
+		}
+
+		se (codigo_valido){
+			preco_total = preco_unitario * quantidade
+			escreva("\n--- Resumo do Pedido ---")
+			escreva("\nCódigo do Produto: ", codigo)
+			escreva("\nQuantidade: ", quantidade)
+			escreva("\nPreço Unitário: R$ ", preco_unitario)
+			escreva("\nPreço Total Devido: R$ ", preco_total, "\n")
+		}
+	}
+}
