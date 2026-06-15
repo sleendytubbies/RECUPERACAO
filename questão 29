@@ -1,0 +1,63 @@
+programa {
+	funcao inicio() {
+		inteiro id_aluno
+		real nota1, nota2, nota3, ME, MA
+		caracter conceito
+		cadeia status
+
+		escreva("Digite o número de identificação do aluno: ") //usei ia nessa professor n entendi direito, foi para alterar melhor o meu codigo
+		leia(id_aluno)
+		
+		escreva("Digite a primeira nota (Nota 1): ")
+		leia(nota1)
+		
+		escreva("Digite a segunda nota (Nota 2): ")
+		leia(nota2)
+		
+		escreva("Digite a terceira nota (Nota 3): ")
+		leia(nota3)
+		
+		escreva("Digite a média dos exercícios (ME): ")
+		leia(ME)
+
+		MA = (nota1 + (nota2 * 2) + (nota3 * 3) + ME) / 7
+
+		se (MA >= 9.0) 
+		{
+			conceito = 'A'
+		}
+		senao se (MA >= 7.5 e MA < 9.0) 
+		{
+			conceito = 'B'
+		}
+		senao se (MA >= 6.0 e MA < 7.5) 
+		{
+			conceito = 'C'
+		}
+		senao se (MA >= 4.0 e MA < 6.0) 
+		{
+			conceito = 'D'
+		}
+		senao 
+		{
+			conceito = 'E'
+		}
+
+		se (conceito == 'A' ou conceito == 'B' ou conceito == 'C') 
+		{
+			status = "APROVADO"
+		}
+		senao 
+		{
+			status = "REPROVADO"
+		}
+
+		escreva("\nRESULTADO")
+		escreva("\nNúmero do Aluno: ", id_aluno)
+		escreva("\nNotas: ", nota1, " | ", nota2, " | ", nota3)
+		escreva("\nMédia dos Exercícios (ME): ", ME)
+		escreva("\nMédia de Aproveitamento (MA): ", MA)
+		escreva("\nConceito: ", conceito)
+		escreva("\nSituação: ", status)
+	}
+}
