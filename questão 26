@@ -1,0 +1,32 @@
+programa {
+	funcao inicio() {
+		inteiro valor, rest, notas100, notas50, notas10, notas5, notas1
+
+		escreva("Digite o valor: ")
+		leia(valor)
+
+		rest = valor
+
+		notas100 = rest / 100
+		rest = rest % 100
+
+		notas50 = rest / 50
+		rest = rest % 50
+
+		notas10 = rest / 10
+		rest = rest % 10
+
+		notas5 = rest / 5
+		rest = rest % 5
+
+		notas1 = rest 
+
+		escreva("\nValor lido: R$ ", valor)
+
+		escreva("\nNotas de 100: ", notas100)
+		escreva("\nNotas de 50:  ", notas50)
+		escreva("\nNotas de 10:  ", notas10)
+		escreva("\nNotas de 5:   ", notas5)
+		escreva("\nNotas de 1:   ", notas1)
+	}
+}
