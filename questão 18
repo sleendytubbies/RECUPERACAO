@@ -1,0 +1,47 @@
+programa {
+	funcao inicio() {
+		real saldo, valor
+		inteiro cate
+
+		escreva("Digite o saldo medio do cliente: ")
+		leia(saldo)
+
+		se (saldo >= 0 e saldo <= 200){
+			cate = 1
+		}
+    senao se (saldo >= 201 e saldo <= 400){
+			cate = 2
+		}
+    senao se (saldo >= 401 e saldo <= 600){
+			cate = 3
+		}
+    senao se (saldo >= 601){
+			cate = 4
+		}
+    senao {
+			cate = 0 
+		}
+
+		escolha (cate){
+			caso 1:
+				valor = 0.0
+				pare
+			caso 2:
+				valor = saldo * 0.20
+				pare
+			caso 3:
+				valor = saldo * 0.30
+				pare
+			caso 4:
+				valor = saldo * 0.40
+				pare
+			caso contrario:
+				escreva("Saldo invalido.\n")
+				retorne 
+		}
+
+		escreva("\nRESULTADO")
+		escreva("\nSaldo Medio: R$ ", saldo)
+		escreva("\nValor do Crédito Concedido: R$ ", valor, "\n")
+	}
+}
