@@ -1,0 +1,53 @@
+programa {
+  funcao inicio() {
+		real nota1, nota2, nota3, media
+		inteiro opcao
+
+		escreva("Digite a PRIMEIRA nota: ")
+		leia(nota1)
+		
+		escreva("Digite a SEGUNDA nota: ")
+		leia(nota2)
+		
+		escreva("Digite a TERCEIRA nota: ")
+		leia(nota3)
+
+		escreva("\nESCOLHA FORMA DE CALCULO:\n")
+		escreva("1 - aritmética\n")
+		escreva("2 - ponderada (pesos 3, 3, 4)\n")
+		escreva("3 - harmônica\n")
+		escreva("Digite a sua opção: ")
+		leia(opcao)
+
+		escreva("\n\n")
+
+		escolha(opcao)
+		{
+			caso 1:
+				media = (nota1 + nota2 + nota3) / 3
+				escreva("Média Aritmética: ", media)
+				pare
+				
+			caso 2:
+				media = ((nota1 * 3) + (nota2 * 3) + (nota3 * 4)) / 10
+				escreva("Média Ponderada: ", media)
+				pare
+				
+			caso 3:
+				se (nota1 == 0 ou nota2 == 0 ou nota3 == 0) 
+				{
+					escreva("Erro: Não é possível calcular a média harmônica com notas iguais a zero.")
+				}
+				senao 
+				{
+					media = 3 / ((1 / nota1) + (1 / nota2) + (1 / nota3))
+					escreva("Média Harmônica: ", media)
+				}
+				pare
+				
+			caso contrario:
+				escreva("Opção invalida.")
+		}
+		escreva("\n\n")
+	}
+}
